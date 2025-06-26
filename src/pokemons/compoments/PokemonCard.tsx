@@ -19,13 +19,14 @@ export const PokemonCard = ({pokemon}:Props) => {
                 src={`https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/dream-world/${id}.svg`}
                 width={100}
                 height={100}
+                style={{ height: 'auto', width:'auto' }}
                 alt={pokemon.name}
                 priority={false}
             />
           <p className="pt-2 text-lg font-semibold text-gray-50 capitalize">{name}</p>
           <div className="mt-5">
             <Link
-            href={`/dashboard/pokemon/${id}`}
+            href={`/dashboard/pokemons/${name}`}
               className="border rounded-full py-2 px-4 text-xs font-semibold text-gray-100"
             >
               Mas Info
